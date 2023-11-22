@@ -11,9 +11,9 @@ public class WinZone : AbstracZone
    public float time2;
    public GameObject winPlatform;
    public ZoneController zoneController;
+   public GameObject CanvaWin;
 
-     
-   
+
    private void OnTriggerEnter(Collider other)
    {
       if (other.gameObject.CompareTag("Enemy"))
@@ -49,8 +49,7 @@ public class WinZone : AbstracZone
    {
       if ((zoneController.zoneList.Count > 2) && (allyZoneConquered))
       {
-         //WIN
-         Debug.Log("win");
+         CanvaWin.SetActive(true);
       }
       if ((zoneController.zoneListEnem.Count > 2) && (!allyZoneConquered))
       {
