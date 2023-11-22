@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class SpeedZone : AbstracZone
 {
+    public Clone clone;
+    private void Start()
+    {
+        clone = FindObjectOfType<Clone>();
+    }
     public void Update()
     {
         if ((allyList.Count == 0)||(enemyList.Count == 0))
@@ -46,7 +51,7 @@ public class SpeedZone : AbstracZone
     {
         if (allyZoneConquered)
         {
-            // los aliados ganaron, entonces su velocidad es x2
+            clone.speed = clone.speed * 2;
         }
         if (!allyZoneConquered)
         {

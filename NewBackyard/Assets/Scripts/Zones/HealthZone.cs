@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class HealthZone : AbstracZone
 {
+    public Clone clone;
+
+    private void Start()
+    {
+        clone = FindObjectOfType<Clone>();
+    }
     public void Update()
     {
         if ((allyList.Count == 0)||(enemyList.Count == 0))
@@ -49,7 +55,7 @@ public class HealthZone : AbstracZone
     {
         if (allyZoneConquered)
         {
-            // los aliados ganaron, entonces su vida es x2
+            clone.lifetime = clone.lifetime * 2;
         }
         if (!allyZoneConquered)
         {
