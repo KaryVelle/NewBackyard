@@ -72,14 +72,7 @@ public abstract class AbstracZone : MonoBehaviour
       flag.GetComponent<Renderer>().material = enemyMat;
       tower.GetComponent<Renderer>().material = enemyMat;
     }
-
-    if (zoneEmpty)
-    {
-      soil.GetComponent<Renderer>().material = normalMat;
-      flag.GetComponent<Renderer>().material = normalMat;
-      tower.GetComponent<Renderer>().material = normalMat;
-      
-    }
+    
   }
 
   public void SpreadLooser()
