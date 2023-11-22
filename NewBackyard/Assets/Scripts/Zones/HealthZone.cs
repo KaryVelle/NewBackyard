@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HealthZone : AbstracZone
 {
-    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
@@ -12,12 +11,14 @@ public class HealthZone : AbstracZone
             AddEnemy( other.GetComponent<GameObject>());
             ChangeColor();
             Debug.Log("Enemy");
+           
         }
         if (other.gameObject.CompareTag("Ally"))
         {
             AddAlly(other.GetComponent<GameObject>());
             ChangeColor();
             Debug.Log("Ally");
+           
         }
     }
     
@@ -27,11 +28,13 @@ public class HealthZone : AbstracZone
         {
             DeleteEnemy( other.GetComponent<GameObject>());
             ChangeColor();
+            
         }
         if (other.gameObject.CompareTag("Ally"))
         {
             DeleteAlly( other.GetComponent<GameObject>());
             ChangeColor();
+            
         }
     }
     public void ActivateAbitity()

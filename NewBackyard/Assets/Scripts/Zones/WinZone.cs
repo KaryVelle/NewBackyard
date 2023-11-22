@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,11 +11,13 @@ public class WinZone : AbstracZone
       {
          AddEnemy(other.GetComponent<GameObject>());
          ChangeColor();
+        
       }
       if (other.gameObject.CompareTag("Ally"))
       {
          AddAlly(other.GetComponent<GameObject>());
          ChangeColor();
+         
       }
    }
     
@@ -24,11 +27,13 @@ public class WinZone : AbstracZone
       {
          DeleteEnemy( other.GetComponent<GameObject>());
          ChangeColor();
+         
       }
       if (other.gameObject.CompareTag("Ally"))
       {
          DeleteAlly( other.GetComponent<GameObject>());
          ChangeColor();
+        
       }
    }
    public void ActivateAbitity()
