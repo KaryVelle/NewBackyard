@@ -26,6 +26,7 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
+        target = GameObject.Find("Capsule");
         _behaviourController = GetComponent<BehaviourController>();
         _wander = GetComponent<Wander>();
         _seek = GetComponent<Seek>();
