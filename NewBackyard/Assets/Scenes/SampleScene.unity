@@ -789,6 +789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass Cluster 02
       objectReference: {fileID: 0}
+    - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
 --- !u!1001 &132657552
@@ -805,6 +809,10 @@ PrefabInstance:
     - target: {fileID: 5785024724163837919, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Name
       value: Tower 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5785024724163837919, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5785024724163929087, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_RootOrder
@@ -1025,6 +1033,10 @@ PrefabInstance:
     - target: {fileID: 1784782161139535823, guid: 5786db229d8eced4a984d006ef8764d1, type: 3}
       propertyPath: m_Name
       value: Tree 04 Twoside
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784782161139535823, guid: 5786db229d8eced4a984d006ef8764d1, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5786db229d8eced4a984d006ef8764d1, type: 3}
@@ -1299,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree 06
       objectReference: {fileID: 0}
+    - target: {fileID: 2132349661344118227, guid: 1466ddc90a669554f8203b8dac6750c2, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1466ddc90a669554f8203b8dac6750c2, type: 3}
 --- !u!1 &188477574 stripped
@@ -1504,6 +1520,10 @@ PrefabInstance:
     - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
       propertyPath: m_Name
       value: Grass Cluster 02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 6801207103856319222, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
       propertyPath: m_LocalScale.x
@@ -1812,6 +1832,10 @@ PrefabInstance:
     - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Name
       value: Island Cluster 02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -2341,6 +2365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree 03 Orange Twoside
       objectReference: {fileID: 0}
+    - target: {fileID: 4810739106269727074, guid: 53f1dafbcf9f62c4b8b33d9c3df5e12a, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     - target: {fileID: 4810739106270025026, guid: 53f1dafbcf9f62c4b8b33d9c3df5e12a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2623,6 +2651,10 @@ PrefabInstance:
     - target: {fileID: 4006135887945164541, guid: 2e3e4800b2fc77b4593d98e0e205e1a2, type: 3}
       propertyPath: m_Name
       value: Tree 04 Oneside
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006135887945164541, guid: 2e3e4800b2fc77b4593d98e0e205e1a2, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 4006135887945399005, guid: 2e3e4800b2fc77b4593d98e0e205e1a2, type: 3}
       propertyPath: m_RootOrder
@@ -3148,6 +3180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Island Cluster 02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -3304,6 +3340,10 @@ PrefabInstance:
     - target: {fileID: 5935514896897500345, guid: 3455833eec4b82945b32eb9bc930accd, type: 3}
       propertyPath: m_Name
       value: Stone Corner 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5935514896897500345, guid: 3455833eec4b82945b32eb9bc930accd, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3455833eec4b82945b32eb9bc930accd, type: 3}
@@ -3599,6 +3639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree 07
       objectReference: {fileID: 0}
+    - target: {fileID: 1270204790995689357, guid: 6c6b81266a9ed60488e15af3fa4f5237, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c6b81266a9ed60488e15af3fa4f5237, type: 3}
 --- !u!1001 &602685648
@@ -3852,6 +3896,10 @@ PrefabInstance:
     - target: {fileID: 4006135887945164541, guid: 2e3e4800b2fc77b4593d98e0e205e1a2, type: 3}
       propertyPath: m_Name
       value: Tree 04 Oneside (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006135887945164541, guid: 2e3e4800b2fc77b4593d98e0e205e1a2, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 4006135887945399005, guid: 2e3e4800b2fc77b4593d98e0e205e1a2, type: 3}
       propertyPath: m_RootOrder
@@ -4121,6 +4169,10 @@ PrefabInstance:
     - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Name
       value: Island Cluster 02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -4677,6 +4729,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 429953531}
     m_Modifications:
+    - target: {fileID: 647144030627708150, guid: 8eb393ff6578ac945b50e7c1b9ba0d41, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 647144030629608982, guid: 8eb393ff6578ac945b50e7c1b9ba0d41, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4724,6 +4780,10 @@ PrefabInstance:
     - target: {fileID: 647144030629962294, guid: 8eb393ff6578ac945b50e7c1b9ba0d41, type: 3}
       propertyPath: m_Name
       value: Tree 01Oneside
+      objectReference: {fileID: 0}
+    - target: {fileID: 647144030629962294, guid: 8eb393ff6578ac945b50e7c1b9ba0d41, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb393ff6578ac945b50e7c1b9ba0d41, type: 3}
@@ -4817,6 +4877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree 03 Orange Oneside
       objectReference: {fileID: 0}
+    - target: {fileID: 2957837248884910040, guid: 5fd73c609ec49e34686a652d54bf9e71, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fd73c609ec49e34686a652d54bf9e71, type: 3}
 --- !u!1001 &756235633
@@ -4829,6 +4893,10 @@ PrefabInstance:
     - target: {fileID: 237020195294721525, guid: 26e1f97bbaa964044a7db8e471fef912, type: 3}
       propertyPath: m_Name
       value: Island Cluster 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 26e1f97bbaa964044a7db8e471fef912, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 26e1f97bbaa964044a7db8e471fef912, type: 3}
       propertyPath: m_RootOrder
@@ -5387,6 +5455,10 @@ PrefabInstance:
     - target: {fileID: 4810739106269727074, guid: 53f1dafbcf9f62c4b8b33d9c3df5e12a, type: 3}
       propertyPath: m_Name
       value: Tree 03 Orange Twoside (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810739106269727074, guid: 53f1dafbcf9f62c4b8b33d9c3df5e12a, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 4810739106270025026, guid: 53f1dafbcf9f62c4b8b33d9c3df5e12a, type: 3}
       propertyPath: m_RootOrder
@@ -6081,6 +6153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass Cluster 02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
 --- !u!1001 &983570835
@@ -6263,6 +6339,10 @@ PrefabInstance:
     - target: {fileID: 5553728831861021432, guid: c97a3e3a7b730af47892f0045dc7b819, type: 3}
       propertyPath: m_Name
       value: Tree 02 Green Oneside
+      objectReference: {fileID: 0}
+    - target: {fileID: 5553728831861021432, guid: c97a3e3a7b730af47892f0045dc7b819, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: c97a3e3a7b730af47892f0045dc7b819, type: 3}
       propertyPath: m_RootOrder
@@ -6772,6 +6852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock 01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3267996510793251772, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
 --- !u!4 &1042351400 stripped
@@ -6808,6 +6892,10 @@ PrefabInstance:
     - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Name
       value: Island Cluster 02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -6905,6 +6993,10 @@ PrefabInstance:
     - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Name
       value: Island Cluster 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -7076,6 +7168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree 03 Orange Twoside (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4810739106269727074, guid: 53f1dafbcf9f62c4b8b33d9c3df5e12a, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     - target: {fileID: 4810739106270025026, guid: 53f1dafbcf9f62c4b8b33d9c3df5e12a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7168,6 +7264,10 @@ PrefabInstance:
     - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Name
       value: Island Cluster 02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -7265,6 +7365,10 @@ PrefabInstance:
     - target: {fileID: 5553728831861021432, guid: c97a3e3a7b730af47892f0045dc7b819, type: 3}
       propertyPath: m_Name
       value: Tree 02 Green Oneside (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5553728831861021432, guid: c97a3e3a7b730af47892f0045dc7b819, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5553728831861049048, guid: c97a3e3a7b730af47892f0045dc7b819, type: 3}
       propertyPath: m_RootOrder
@@ -7398,6 +7502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom 01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4160352966962700543, guid: 50e9a2d6e6612664286515aa82188f88, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e9a2d6e6612664286515aa82188f88, type: 3}
 --- !u!4 &1190527892 stripped
@@ -7504,6 +7612,10 @@ PrefabInstance:
     - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
       propertyPath: m_Name
       value: Grass Cluster 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 6801207103856319222, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
       propertyPath: m_LocalScale.x
@@ -7922,6 +8034,10 @@ PrefabInstance:
     - target: {fileID: 3267996510793251772, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
       propertyPath: m_Name
       value: Rock 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267996510793251772, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
@@ -8621,6 +8737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass Cluster 02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
 --- !u!1001 &1427696334
@@ -8633,6 +8753,10 @@ PrefabInstance:
     - target: {fileID: 567360348104713016, guid: 32e6202155378ed4f93735981381117f, type: 3}
       propertyPath: m_Name
       value: Rock Cluster 02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 567360348104713016, guid: 32e6202155378ed4f93735981381117f, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 567360348104713023, guid: 32e6202155378ed4f93735981381117f, type: 3}
       propertyPath: m_RootOrder
@@ -9205,6 +9329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock 01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3267996510793251772, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
 --- !u!4 &1461966892 stripped
@@ -9379,6 +9507,10 @@ PrefabInstance:
     - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
       propertyPath: m_Name
       value: Grass Cluster 02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896955728106240335, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
@@ -9682,6 +9814,10 @@ PrefabInstance:
     - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Name
       value: Island Cluster 02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -10361,6 +10497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree 02 Orange Oneside
       objectReference: {fileID: 0}
+    - target: {fileID: 4437621008515719116, guid: c238da638407d5045bfb87588abc1b12, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     - target: {fileID: 4437621008515744748, guid: c238da638407d5045bfb87588abc1b12, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -10499,6 +10639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock 01
       objectReference: {fileID: 0}
+    - target: {fileID: 3267996510793251772, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2730458f50b29c74daf7e7c4eaa663cd, type: 3}
 --- !u!4 &1710482348 stripped
@@ -10530,6 +10674,10 @@ PrefabInstance:
     - target: {fileID: 567360348104713016, guid: 32e6202155378ed4f93735981381117f, type: 3}
       propertyPath: m_Name
       value: Rock Cluster 02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 567360348104713016, guid: 32e6202155378ed4f93735981381117f, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 567360348104713023, guid: 32e6202155378ed4f93735981381117f, type: 3}
       propertyPath: m_RootOrder
@@ -10631,6 +10779,10 @@ PrefabInstance:
     - target: {fileID: 4160352966962700543, guid: 50e9a2d6e6612664286515aa82188f88, type: 3}
       propertyPath: m_Name
       value: Mushroom 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160352966962700543, guid: 50e9a2d6e6612664286515aa82188f88, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e9a2d6e6612664286515aa82188f88, type: 3}
@@ -11458,7 +11610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   arrival: 1
-  slowingRadius: 100
+  slowingRadius: 3
 --- !u!114 &1819303488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11555,9 +11707,7 @@ MonoBehaviour:
   obstacleRadius: 2
   maxAvoidanceForce: 2
   showVectors: 0
-  positionList:
-  - {fileID: 1068973021}
-  - {fileID: 870092915}
+  positionList: []
 --- !u!1 &1827977590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4437621008515719116, guid: c238da638407d5045bfb87588abc1b12, type: 3}
@@ -12161,6 +12311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arch Gate Debris 02
       objectReference: {fileID: 0}
+    - target: {fileID: 793887876428369594, guid: 0575c526387ce444eba501ac4a030a2e, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     - target: {fileID: 793887876428796570, guid: 0575c526387ce444eba501ac4a030a2e, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -12622,6 +12776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree Cluster 02
       objectReference: {fileID: 0}
+    - target: {fileID: 295992510687766418, guid: 1831e64ea5de5f745bdfec6f31626e70, type: 3}
+      propertyPath: m_TagString
+      value: Obs
+      objectReference: {fileID: 0}
     - target: {fileID: 295992510687766419, guid: 1831e64ea5de5f745bdfec6f31626e70, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -12709,6 +12867,10 @@ PrefabInstance:
     - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Name
       value: Island Cluster 02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 237020195294721525, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
+      propertyPath: m_TagString
+      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder

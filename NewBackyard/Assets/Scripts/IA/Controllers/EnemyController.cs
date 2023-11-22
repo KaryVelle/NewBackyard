@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     private BehaviourController _behaviourController;
     private Wander _wander;
     private Seek _seek;
+    private AvoidCollision _avoidCollision;
     private PathFollowing _pathFollowing;
     public GameObject target;
 
@@ -25,6 +26,7 @@ public class EnemyController : MonoBehaviour
         _behaviourController = GetComponent<BehaviourController>();
         _wander = GetComponent<Wander>();
         _seek = GetComponent<Seek>();
+        _avoidCollision = GetComponent<AvoidCollision>();
         _pathFollowing = GetComponent<PathFollowing>();
 
     }
@@ -39,12 +41,12 @@ public class EnemyController : MonoBehaviour
                 break;
             case State.Follow:
                 _behaviourController.behaviours[0] = _seek;
+                _avoidCollision.enabled = false;
                 _wander.enabled = false;
                 _seek.Target = target.transform.position;
                 break;
             case State.Zone1:
                 _behaviourController.behaviours[0] = _pathFollowing;
-                _pathFollowing.endList = _pathFollowing.nodes2;
                 _wander.enabled = false;
                 break;
             case State.Zone2:

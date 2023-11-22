@@ -8,13 +8,15 @@ public class AvoidCollision : Steering
     public float obstacleRadius;
     public float maxAvoidanceForce;
     public bool showVectors;
-    public List<GameObject> positionList = new List<GameObject>();
+    public GameObject[] positionList;
     private List<Vector3> _obstacleList = new List<Vector3>();
     private Vector3 _ahead, _ahead2;
     
 
     private void Start()
     {
+        positionList = GameObject.FindGameObjectsWithTag("Obs");
+        
         foreach (var obstacle in positionList)
         {
             Vector3 position = obstacle.transform.position;

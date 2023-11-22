@@ -12,6 +12,7 @@ public class BehaviourController : MonoBehaviour
         void FixedUpdate()
         {
             _totalForce = Vector3.zero;
+            behaviours.RemoveAll(x => !x);
 
             foreach (Steering behaviour in behaviours)
             {
