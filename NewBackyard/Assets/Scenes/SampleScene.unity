@@ -1840,6 +1840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotSpeed: 50
+  selector: {fileID: 0}
 --- !u!1001 &225863803
 PrefabInstance:
   m_ObjectHideFlags: 0
