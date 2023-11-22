@@ -40,7 +40,7 @@ public class Wander : Steering
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotSpeed);
         distanceToPlayer = (t_target.position - transform.position).magnitude;
 
-        if (distanceToPlayer <= 100f)
+        if (distanceToPlayer <= 10f)
         {
             EnemyController.enemyState = EnemyController.State.Follow;
         }
@@ -52,7 +52,7 @@ public class Wander : Steering
         while (_startRandom)
         {
             Vector3 randomTarget = new Vector3(Random.Range(-targetSpace[0],
-                targetSpace[0]), Random.Range(-targetSpace[1], targetSpace[1]),
+                targetSpace[0]), 6,
                 Random.Range(-targetSpace[2], targetSpace[2]));
             _seek.Target = randomTarget;
             yield return new WaitForSeconds(Random.Range(targetChange[0], targetChange[1]));

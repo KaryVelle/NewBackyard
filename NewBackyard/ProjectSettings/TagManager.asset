@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Ally
+  - Obs
   layers:
   - Default
   - TransparentFX
