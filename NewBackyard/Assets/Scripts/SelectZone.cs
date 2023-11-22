@@ -9,10 +9,13 @@ public class SelectZone : MonoBehaviour
 {
     [SerializeField] bool canSend = true;
     private EnemyController enemy;
+    private Clone clone;
     private void Start()
     {
         enemy = GetComponent<EnemyController>();
         canSend = true;
+        clone = FindObjectOfType<Clone>();
+        StartCoroutine(LifeTime(clone.lifetime));
     }
     // Update is called once per frame
     void Update()
@@ -46,5 +49,11 @@ public class SelectZone : MonoBehaviour
                 canSend = false;
             }
         }
+    }
+
+    IEnumerator LifeTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
     }
 }

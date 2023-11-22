@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
     public int maxSpawn;
     public List<GameObject> enemyList;
     public int spawnTime;
+    public Clone clone;
 
     private void Start()
     {
@@ -18,10 +19,12 @@ public class Spawner : MonoBehaviour
             enemyList.Add(NewInst);
         }
         InvokeRepeating("Spawn", 2f, spawnTime);
+        clone = FindObjectOfType<Clone>();
     }
 
     private void Spawn()
     {
+        spawnTime = clone.spawnTime;
         Vector3 randomPos = new Vector3(Random.Range(-77f, 125f), 5f, Random.Range(-118f, 64f));
         GameObject newEnemy = Instantiate(enemy, randomPos, Quaternion.identity);
     }

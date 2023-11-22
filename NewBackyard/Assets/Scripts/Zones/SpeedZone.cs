@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class SpeedZone : AbstracZone
 {
+    public Clone clone;
+    private void Start()
+    {
+        clone = FindObjectOfType<Clone>();
+    }
+    public void Update()
+    {
+        if ((allyList.Count == 0)||(enemyList.Count == 0))
+        {
+            zoneEmpty = true;
+        }
+        if ((allyList.Count != 0)||(enemyList.Count != 0))
+        {
+            zoneEmpty = false;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
@@ -39,10 +55,11 @@ public class SpeedZone : AbstracZone
     {
         if (allyZoneConquered)
         {
-            // los aliados ganaron, entonces su velocidad es x2
+            clone.speed = 10;
         }
         if (!allyZoneConquered)
         {
+            clone.speed = 5;
             // los enemigos ganaron, entonces su velocidad es x2
         }
     }

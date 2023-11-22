@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Clone
+public class Clone : MonoBehaviour
 {
     public float speed;
-
+    public float lifetime;
+    public int spawnTime;
 }
