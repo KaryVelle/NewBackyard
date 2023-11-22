@@ -4,8 +4,38 @@ using UnityEngine;
 
 public class WinZone : AbstracZone
 {
-   public override Vector3 ActivateAbitity()
+   private void OnTriggerEnter(Collider other)
    {
-      throw new System.NotImplementedException();
+      if (other.gameObject.CompareTag("Enemy"))
+      {
+         AddEnemy( other.GetComponent<GameObject>());
+      }
+      if (other.gameObject.CompareTag("Ally"))
+      {
+         AddAlly(other.GetComponent<GameObject>());
+      }
+   }
+    
+   private void OnTriggerExit(Collider other)
+   {
+      if (other.gameObject.CompareTag("Enemy"))
+      {
+         DeleteEnemy( other.GetComponent<GameObject>());
+      }
+      if (other.gameObject.CompareTag("Ally"))
+      {
+         DeleteAlly( other.GetComponent<GameObject>());
+      }
+   }
+   public void ActivateAbitity()
+   {
+      if (allyZoneConquered)
+      {
+         // los aliados ganaron, entonces ganas
+      }
+      if (!allyZoneConquered)
+      {
+         // los enemigos ganaron, entonces pierdes
+      }
    }
 }

@@ -1,40 +1,41 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class HealthZone : AbstracZone
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("aa");
         if (other.gameObject.CompareTag("Enemy"))
         {
-            addEnemy( other.GetComponent<GameObject>());
-            Debug.Log("enemy");
-            soil.GetComponent<Renderer>().material = enemyMat;
-            flag.GetComponent<Renderer>().material = enemyMat;
-            tower.GetComponent<Renderer>().material = enemyMat;
+            AddEnemy( other.GetComponent<GameObject>());
         }
         if (other.gameObject.CompareTag("Ally"))
         {
-            addAlly(other.GetComponent<GameObject>());
-            Debug.Log("ally");
-            soil.GetComponent<Renderer>().material = allyMat;
-            flag.GetComponent<Renderer>().material = allyMat;
-            tower.GetComponent<Renderer>().material = allyMat;
+            AddAlly(other.GetComponent<GameObject>());
         }
     }
     
     private void OnTriggerExit(Collider other)
     {
-       
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+          DeleteEnemy( other.GetComponent<GameObject>());
+        }
+        if (other.gameObject.CompareTag("Ally"))
+        {
+            DeleteAlly( other.GetComponent<GameObject>());
+        }
     }
-
-
-    public override Vector3 ActivateAbitity()
+    public void ActivateAbitity()
     {
-        throw new System.NotImplementedException();
-        
+        if (allyZoneConquered)
+        {
+            // los aliados ganaron, entonces su vida es x2
+        }
+        if (!allyZoneConquered)
+        {
+            // los enemigos ganaron, entonces su vida es x2
+        }
     }
+    
 }
