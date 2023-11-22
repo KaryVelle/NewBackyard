@@ -492,10 +492,12 @@ MonoBehaviour:
   numberToWin: 2
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 0}
   soil: {fileID: 625679192}
   tower: {fileID: 1382965626}
   flag: {fileID: 510663229}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &38469365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1840,7 +1842,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotSpeed: 50
-  selector: {fileID: 0}
 --- !u!1001 &225863803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4558,10 +4559,12 @@ MonoBehaviour:
   numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 0}
   soil: {fileID: 970575310}
   tower: {fileID: 827413600}
   flag: {fileID: 1776897476}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &536703116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4772,7 +4775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &613248144
 Transform:
   m_ObjectHideFlags: 0
@@ -5756,10 +5759,12 @@ MonoBehaviour:
   numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 0}
   soil: {fileID: 383476396}
   tower: {fileID: 49551011}
   flag: {fileID: 1728794235}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &676943468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7413,7 +7418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937729051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 3, z: -34}
+  m_LocalPosition: {x: 127, y: 3, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10559,10 +10564,12 @@ MonoBehaviour:
   numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 0}
   soil: {fileID: 713108566}
   tower: {fileID: 1931536294}
   flag: {fileID: 1315247919}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &1344704700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15969,10 +15976,12 @@ MonoBehaviour:
   numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 0}
   soil: {fileID: 455580135}
   tower: {fileID: 1363391011}
   flag: {fileID: 1032694031}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &2100402774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16251,6 +16260,10 @@ PrefabInstance:
     - target: {fileID: 4442890593961023214, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
       propertyPath: speed
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442890593961023214, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
+      propertyPath: nodes3.Array.data[1].x
+      value: 127
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
