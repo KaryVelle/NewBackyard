@@ -19,12 +19,8 @@ public class PathFollowing : Steering
     }
     public override Vector3 GetForce()
     {
-        if (Input.GetKeyDown("space")){
-            enemyController.enemyState = EnemyController.State.Zone1;
-        }
         Follow(endList);
         return Seek(endList);
-
     }
 
     public void Follow(List<Vector3> nodeList)

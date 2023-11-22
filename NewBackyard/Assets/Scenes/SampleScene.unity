@@ -11342,6 +11342,7 @@ GameObject:
   - component: {fileID: 1819303489}
   - component: {fileID: 1819303488}
   - component: {fileID: 1819303487}
+  - component: {fileID: 1819303492}
   m_Layer: 0
   m_Name: Ally
   m_TagString: Untagged
@@ -11536,6 +11537,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   behaviours:
   - {fileID: 1819303488}
+  - {fileID: 1819303492}
+--- !u!114 &1819303492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819303481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd502addf2f762b4f85f99e954e5a2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  maxSeeAhead: 2
+  obstacleRadius: 2
+  maxAvoidanceForce: 2
+  showVectors: 0
+  positionList:
+  - {fileID: 1068973021}
+  - {fileID: 870092915}
 --- !u!1 &1827977590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4437621008515719116, guid: c238da638407d5045bfb87588abc1b12, type: 3}
