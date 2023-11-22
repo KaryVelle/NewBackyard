@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1819303481}
-  maxSpawn: 5
+  maxSpawn: 4
   enemyList: []
   spawnTime: 30
 --- !u!4 &84071007
@@ -11336,8 +11336,14 @@ GameObject:
   - component: {fileID: 1819303484}
   - component: {fileID: 1819303483}
   - component: {fileID: 1819303482}
+  - component: {fileID: 1819303486}
+  - component: {fileID: 1819303491}
+  - component: {fileID: 1819303490}
+  - component: {fileID: 1819303489}
+  - component: {fileID: 1819303488}
+  - component: {fileID: 1819303487}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Ally
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11421,6 +11427,115 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1819303486
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819303481}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1819303487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819303481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5afb2e83fd59e5c4ea9e6edbe46eb341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  arrival: 1
+  slowingRadius: 5
+--- !u!114 &1819303488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819303481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6f86ca8d048f14abf41d3cf71c1b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  t_target: {fileID: 209511463}
+  distanceToPlayer: 0
+  circleDistance: 0
+  circleRadius: 0
+  targetChange:
+  - 1
+  - 10
+  targetSpace:
+  - 8
+  - 5
+  - 10
+  angleChange:
+  - 1
+  - 20
+  angleRange:
+  - -45
+  - 45
+  rotSpeed: 2
+--- !u!114 &1819303489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819303481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2764db0d886d91a4787ba7450d3d2e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 209511458}
+  enemyState: 0
+--- !u!114 &1819303490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819303481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41edfe3858f7e35408173fae10c5efc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  enemyController: {fileID: 1819303489}
+  nodes: []
+  nodes2: []
+  endList: []
+  pathRadius: 5
+  looping: 0
+--- !u!114 &1819303491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819303481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfcfa6a63edafb4e957c432e609282d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behaviours:
+  - {fileID: 1819303488}
 --- !u!1 &1827977590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4437621008515719116, guid: c238da638407d5045bfb87588abc1b12, type: 3}

@@ -40,7 +40,7 @@ public class Wander : Steering
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotSpeed);
         distanceToPlayer = (t_target.position - transform.position).magnitude;
 
-        if (distanceToPlayer <= 100f)
+        if (distanceToPlayer <= 10f)
         {
             EnemyController.enemyState = EnemyController.State.Follow;
         }

@@ -16,7 +16,7 @@ public class Seek : Steering
         {
             if (distance <= slowingRadius)
             {
-                DesiredVelocity = DesiredVelocity.normalized * speed * (distance / slowingRadius);
+                DesiredVelocity = Vector3.zero;
             }
             else
             {
