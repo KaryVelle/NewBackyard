@@ -5316,6 +5316,7 @@ MonoBehaviour:
   time2: 5
   winPlatform: {fileID: 1277195358}
   zoneController: {fileID: 0}
+  CanvaWin: {fileID: 697265686}
 --- !u!65 &38469365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11578,7 +11579,7 @@ RectTransform:
   - {fileID: 1771896967}
   - {fileID: 589837209}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11793,7 +11794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &715511580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12402,7 +12403,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &846947582
 GameObject:
