@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpeedZone : AbstracZone
 {
     public Clone clone;
+    public CloneEnemy cloneEnemy;
     private void Start()
     {
         clone = FindObjectOfType<Clone>();
@@ -59,8 +60,8 @@ public class SpeedZone : AbstracZone
         }
         if (!allyZoneConquered)
         {
-            clone.speed = 5;
-           
+            cloneEnemy.speed = 10;
+
         }
     }
 }

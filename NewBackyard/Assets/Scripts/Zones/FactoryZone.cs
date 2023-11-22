@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FactoryZone : AbstracZone
 {
+    public Clone clone;
+    public CloneEnemy cloneEnemy;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
@@ -39,11 +41,13 @@ public class FactoryZone : AbstracZone
     {
         if (allyZoneConquered)
         {
-            // los aliados ganaron, entonces los spawns del enemigo se alentan 
+            // los aliados ganaron, entonces sus spawns se alentan
+            clone.spawnTime /= 2;
         }
         if (!allyZoneConquered)
         {
-            // los enemigos ganaron,  entonces tus spawns se alentan 
+            // los enemigos ganaron, entonces sus spawns se alentan
+            cloneEnemy.spawnTime /= 2;
         }
     }
 }

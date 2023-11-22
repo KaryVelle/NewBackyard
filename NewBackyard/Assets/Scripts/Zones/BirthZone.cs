@@ -5,6 +5,7 @@ using UnityEngine;
 public class BirthZone : AbstracZone
 {
   public Clone clone;
+  public CloneEnemy cloneEnemy;
   private void OnTriggerEnter(Collider other)
   {
     if (other.gameObject.CompareTag("Enemy"))
@@ -46,6 +47,7 @@ public class BirthZone : AbstracZone
     if (!allyZoneConquered)
     {
       // los enemigos ganaron, entonces sus spawns son x2
+      cloneEnemy.spawnTime*= 2;
     }
   }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthZone : AbstracZone
 {
     public Clone clone;
+    public CloneEnemy cloneEnemy;
 
     private void Start()
     {
@@ -62,7 +63,7 @@ public class HealthZone : AbstracZone
         }
         if (!allyZoneConquered)
         {
-            clone.lifetime = 60;
+            cloneEnemy.lifetime = 120;
            
         }
     }
