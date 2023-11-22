@@ -52,7 +52,7 @@ public class Wander : Steering
         while (_startRandom)
         {
             Vector3 randomTarget = new Vector3(Random.Range(-targetSpace[0],
-                targetSpace[0]), Random.Range(-targetSpace[1], targetSpace[1]),
+                targetSpace[0]), 6,
                 Random.Range(-targetSpace[2], targetSpace[2]));
             _seek.Target = randomTarget;
             yield return new WaitForSeconds(Random.Range(targetChange[0], targetChange[1]));

@@ -11455,9 +11455,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5afb2e83fd59e5c4ea9e6edbe46eb341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   arrival: 1
-  slowingRadius: 5
+  slowingRadius: 100
 --- !u!114 &1819303488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11477,17 +11477,17 @@ MonoBehaviour:
   circleRadius: 0
   targetChange:
   - 1
-  - 10
-  targetSpace:
-  - 8
   - 5
-  - 10
+  targetSpace:
+  - 100
+  - 5
+  - 100
   angleChange:
   - 1
-  - 20
+  - 3
   angleRange:
-  - -45
-  - 45
+  - -180
+  - 180
   rotSpeed: 2
 --- !u!114 &1819303489
 MonoBehaviour:
