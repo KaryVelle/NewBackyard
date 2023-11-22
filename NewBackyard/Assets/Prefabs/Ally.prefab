@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4442890593961023212}
   - component: {fileID: 4442890593961023123}
   - component: {fileID: 4442890593961023208}
+  - component: {fileID: 1869138167989155882}
   m_Layer: 0
   m_Name: Ally
   m_TagString: Ally
@@ -69,7 +70,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -160,7 +161,7 @@ MonoBehaviour:
   nodes3:
   - {x: 112, y: 0, z: 10}
   - {x: 126, y: 3, z: 11}
-  - {x: 126, y: 3, z: 48}
+  - {x: 125, y: 3, z: 48}
   - {x: 91, y: 3, z: 55}
   nodes4:
   - {x: -56, y: 0, z: 2}
@@ -169,7 +170,7 @@ MonoBehaviour:
   - {x: 6, y: 0, z: 13}
   - {x: 6, y: 3, z: -34}
   endList: []
-  pathRadius: 1
+  pathRadius: 2
   looping: 0
 --- !u!114 &4442890593961023213
 MonoBehaviour:
@@ -184,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  canSend: 0
   enemyState: 0
 --- !u!114 &4442890593961023212
 MonoBehaviour:
@@ -198,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  t_target: {fileID: 0}
+  t_target: {fileID: 4442890593961023121}
   distanceToPlayer: 0
   circleDistance: 0
   circleRadius: 0
@@ -248,3 +250,16 @@ MonoBehaviour:
   obstacleRadius: 5
   maxAvoidanceForce: 10
   showVectors: 1
+--- !u!114 &1869138167989155882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4442890593961023125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05c46034b6bbfb4cbbc2bf30f6ff308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canSend: 0
