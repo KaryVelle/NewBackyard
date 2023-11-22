@@ -46,12 +46,12 @@ public class HealthZone : AbstracZone
         {
             DeleteEnemy( other.GetComponent<GameObject>());
             ChangeColor();
+            
         }
         if (other.gameObject.CompareTag("Ally"))
         {
             DeleteAlly( other.GetComponent<GameObject>());
             ChangeColor();
-
         }
     }
     public void ActivateAbitity()

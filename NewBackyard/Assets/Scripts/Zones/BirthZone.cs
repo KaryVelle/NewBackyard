@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class BirthZone : AbstracZone
 {
-
   private void OnTriggerEnter(Collider other)
   {
     if (other.gameObject.CompareTag("Enemy"))
     {
       AddEnemy(other.GetComponent<GameObject>());
       ChangeColor();
+     
     }
     if (other.gameObject.CompareTag("Ally"))
     {
       AddAlly(other.GetComponent<GameObject>());
       ChangeColor();
+      
     }
   }
     
@@ -25,11 +26,13 @@ public class BirthZone : AbstracZone
     {
       DeleteEnemy( other.GetComponent<GameObject>());
       ChangeColor();
+      
     }
     if (other.gameObject.CompareTag("Ally"))
     {
       DeleteAlly( other.GetComponent<GameObject>());
       ChangeColor();
+    
     }
   }
   public void ActivateAbitity()

@@ -26,11 +26,13 @@ public class SpeedZone : AbstracZone
         {
             AddEnemy(other.GetComponent<GameObject>());
             ChangeColor();
+           
         }
         if (other.gameObject.CompareTag("Ally"))
         {
             AddAlly(other.GetComponent<GameObject>());
             ChangeColor();
+            
         }
     }
     
@@ -40,11 +42,13 @@ public class SpeedZone : AbstracZone
         {
             DeleteEnemy(other.GetComponent<GameObject>());
             ChangeColor();
+            
         }
         if (other.gameObject.CompareTag("Ally"))
         {
             DeleteAlly(other.GetComponent<GameObject>());
             ChangeColor();
+           
         }
     }
     public void ActivateAbitity()

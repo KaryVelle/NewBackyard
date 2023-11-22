@@ -17,17 +17,17 @@ public abstract class AbstracZone : MonoBehaviour
   public bool allyZoneConquered;
   public bool zoneEmpty;
 
-  public void GetMajorPopulation()
+  private void GetMajorPopulation()
   {
-    if (allyList.Count >= numberToWin)
+    if (allyList.Count >= enemyList.Count)
     {
-      SpreadLooser();
+      //SpreadLooser();
       allyZoneConquered = true;
       ChangeColor();
     }
-    if (enemyList.Count >= numberToWin)
+    if (enemyList.Count >= allyList.Count)
     {
-      SpreadLooser();
+     // SpreadLooser();
       allyZoneConquered = false;
       ChangeColor();
       
@@ -59,20 +59,18 @@ public abstract class AbstracZone : MonoBehaviour
 
   public void ChangeColor()
   {
-   
-    if ((allyZoneConquered)&&(!zoneEmpty))
+    if (allyZoneConquered)
     {
       soil.GetComponent<Renderer>().material = allyMat;
       flag.GetComponent<Renderer>().material = allyMat;
       tower.GetComponent<Renderer>().material = allyMat;
     }
-    if ((!allyZoneConquered)&&(!zoneEmpty) )
+   else
     {
       soil.GetComponent<Renderer>().material = enemyMat;
       flag.GetComponent<Renderer>().material = enemyMat;
       tower.GetComponent<Renderer>().material = enemyMat;
     }
-    
   }
 
   public void SpreadLooser()
