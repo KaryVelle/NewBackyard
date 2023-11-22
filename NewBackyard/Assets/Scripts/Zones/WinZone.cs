@@ -26,8 +26,8 @@ public class WinZone : AbstracZone
       {
          AddAlly(other.GetComponent<GameObject>());
          ChangeColor();
-         
       }
+      ActivateAbitity();
    }
     
    private void OnTriggerExit(Collider other)

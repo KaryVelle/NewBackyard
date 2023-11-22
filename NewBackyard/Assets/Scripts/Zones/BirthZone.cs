@@ -18,7 +18,7 @@ public class BirthZone : AbstracZone
     {
       AddAlly(other.GetComponent<GameObject>());
       ChangeColor();
-      
+      ActivateAbitity();
     }
   }
     
