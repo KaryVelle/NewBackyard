@@ -193,7 +193,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 919132149155446097, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Name
       value: Flag Blue (1)
@@ -336,7 +336,7 @@ PrefabInstance:
     - target: {fileID: 4810897020052336290, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
 --- !u!4 &27071757 stripped
@@ -489,12 +489,12 @@ MonoBehaviour:
   enemyList: []
   allyList: []
   timeRemaining: 0
-  numberToWin: 0
-  enemyMat: {fileID: 0}
-  allyMat: {fileID: 0}
-  soil: {fileID: 0}
-  tower: {fileID: 0}
-  flag: {fileID: 0}
+  numberToWin: 2
+  enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
+  allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  soil: {fileID: 625679192}
+  tower: {fileID: 1382965626}
+  flag: {fileID: 510663229}
   allyZoneConquered: 0
 --- !u!65 &38469365
 BoxCollider:
@@ -504,7 +504,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38469362}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 47.642033, y: 9.068133, z: 43.542397}
@@ -1104,7 +1104,7 @@ PrefabInstance:
     - target: {fileID: 5785024724161634591, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 5785024724163837919, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Name
       value: Tower 01
@@ -1190,7 +1190,7 @@ PrefabInstance:
     - target: {fileID: 5785024724161634591, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 5785024724163837919, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Name
       value: Tower 01 (2)
@@ -1725,7 +1725,7 @@ GameObject:
   - component: {fileID: 209511464}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Enemy
+  m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1818,7 +1818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209511458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 91.063446, y: 24.359999, z: 55.449997}
+  m_LocalPosition: {x: 91.063446, y: 24.359999, z: -104.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1840,7 +1840,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotSpeed: 50
-  selector: {fileID: 0}
 --- !u!1001 &225863803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2931,7 +2930,7 @@ PrefabInstance:
     - target: {fileID: 4810897020052336290, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
 --- !u!4 &349097417 stripped
@@ -3091,7 +3090,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalScale.x
@@ -3160,7 +3159,7 @@ PrefabInstance:
     - target: {fileID: 4810897020052336290, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
 --- !u!4 &383476395 stripped
@@ -3963,6 +3962,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b6d27f870f5f0c4ea5839dc5046d57f, type: 3}
+--- !u!1 &455580135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4810897020050403426, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
+  m_PrefabInstance: {fileID: 349097416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &460682399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4448,7 +4452,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 919132149155446097, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Name
       value: Flag Blue
@@ -4550,12 +4554,12 @@ MonoBehaviour:
   enemyList: []
   allyList: []
   timeRemaining: 0
-  numberToWin: 0
-  enemyMat: {fileID: 0}
-  allyMat: {fileID: 0}
-  soil: {fileID: 0}
-  tower: {fileID: 0}
-  flag: {fileID: 0}
+  numberToWin: 1
+  enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
+  allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  soil: {fileID: 970575310}
+  tower: {fileID: 827413600}
+  flag: {fileID: 1776897476}
   allyZoneConquered: 0
 --- !u!65 &536703116
 BoxCollider:
@@ -4565,7 +4569,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536703113}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 47.642033, y: 9.068133, z: 43.542397}
@@ -4798,7 +4802,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalScale.x
@@ -4923,6 +4927,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1569953145559690510, guid: e6892e3176b52e44cbcddf83696812ec, type: 3}
   m_PrefabInstance: {fileID: 625451415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &625679192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4810897020050403426, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
+  m_PrefabInstance: {fileID: 1802601937}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &630644643
 PrefabInstance:
@@ -5258,10 +5267,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -5743,7 +5752,7 @@ MonoBehaviour:
   enemyList: []
   allyList: []
   timeRemaining: 0
-  numberToWin: 0
+  numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
   soil: {fileID: 383476396}
@@ -6030,7 +6039,7 @@ PrefabInstance:
     - target: {fileID: 5785024724161634591, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 5785024724163837919, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Name
       value: Tower 01 (4)
@@ -6111,6 +6120,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 2d000b77d57e5c240ad642bef34725ea, type: 3}
+--- !u!1 &713108566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4810897020050403426, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
+  m_PrefabInstance: {fileID: 27071756}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &715511579
 GameObject:
   m_ObjectHideFlags: 0
@@ -6652,7 +6666,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 919132149155446097, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Name
       value: Flag Blue (2)
@@ -6881,7 +6895,7 @@ PrefabInstance:
     - target: {fileID: 5785024724161634591, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 5785024724163837919, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Name
       value: Tower 01 (3)
@@ -7758,6 +7772,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dd1f9f8e25223a48a085e2318ca0644, type: 3}
+--- !u!1 &970575310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4810897020050403426, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
+  m_PrefabInstance: {fileID: 1596079797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &983570835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10536,12 +10555,12 @@ MonoBehaviour:
   enemyList: []
   allyList: []
   timeRemaining: 0
-  numberToWin: 0
-  enemyMat: {fileID: 0}
-  allyMat: {fileID: 0}
-  soil: {fileID: 0}
-  tower: {fileID: 0}
-  flag: {fileID: 0}
+  numberToWin: 1
+  enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
+  allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  soil: {fileID: 713108566}
+  tower: {fileID: 1931536294}
+  flag: {fileID: 1315247919}
   allyZoneConquered: 0
 --- !u!65 &1344704700
 BoxCollider:
@@ -10551,7 +10570,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344704697}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 47.642033, y: 9.068133, z: 43.542397}
@@ -11770,7 +11789,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 919132149155446097, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Name
       value: Flag Blue (3)
@@ -12457,11 +12476,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.3477783
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.0881042
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12501,12 +12520,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050403426, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020052336290, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
 --- !u!4 &1596079798 stripped
@@ -13862,12 +13881,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050403426, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020052336290, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
 --- !u!4 &1802601938 stripped
@@ -14282,7 +14301,7 @@ PrefabInstance:
     - target: {fileID: 5785024724161634591, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 5785024724163837919, guid: 5a7193b88ce93fd45ab1d0b1a42f4d35, type: 3}
       propertyPath: m_Name
       value: Tower 01 (1)
@@ -15624,7 +15643,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
     - target: {fileID: 919132149155446097, guid: d47b306839255214a87ea2fb5dc01c5f, type: 3}
       propertyPath: m_Name
       value: Flag Blue (4)
@@ -15946,12 +15965,12 @@ MonoBehaviour:
   enemyList: []
   allyList: []
   timeRemaining: 0
-  numberToWin: 0
-  enemyMat: {fileID: 0}
-  allyMat: {fileID: 0}
-  soil: {fileID: 0}
-  tower: {fileID: 0}
-  flag: {fileID: 0}
+  numberToWin: 1
+  enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
+  allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  soil: {fileID: 455580135}
+  tower: {fileID: 1363391011}
+  flag: {fileID: 1032694031}
   allyZoneConquered: 0
 --- !u!65 &2100402774
 BoxCollider:
@@ -15961,7 +15980,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100402771}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 47.642033, y: 9.068133, z: 46.450874}
@@ -16157,12 +16176,24 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4442890593961023121, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442890593961023121, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442890593961023121, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442890593961023121, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.3664684
+      value: 75.5
       objectReference: {fileID: 0}
     - target: {fileID: 4442890593961023121, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 19.6
       objectReference: {fileID: 0}
     - target: {fileID: 4442890593961023121, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16196,8 +16227,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4442890593961023121, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4442890593961023125, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
       propertyPath: m_Name
+      value: Ally
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442890593961023125, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
+      propertyPath: m_TagString
       value: Ally
       objectReference: {fileID: 0}
     - target: {fileID: 4442890593961023212, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
@@ -16208,5 +16247,9 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 209511458}
+    - target: {fileID: 4442890593961023214, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
