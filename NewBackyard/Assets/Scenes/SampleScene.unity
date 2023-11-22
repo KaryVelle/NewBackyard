@@ -486,16 +486,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6ce7e2276f4b0439c0ef7b6f2fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationCollider: {fileID: 38469365}
   enemyList: []
   allyList: []
   timeRemaining: 0
-  position: {x: 0, y: 0, z: 0}
+  numberToWin: 0
   enemyMat: {fileID: 0}
   allyMat: {fileID: 0}
   soil: {fileID: 0}
   tower: {fileID: 0}
   flag: {fileID: 0}
+  allyZoneConquered: 0
 --- !u!65 &38469365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -669,11 +669,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -321116364623675988, guid: e17088aea23eae5438cc227cde361a35, type: 3}
---- !u!4 &105020852 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
-  m_PrefabInstance: {fileID: 621934639}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &84071005
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +717,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &105020852 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
+  m_PrefabInstance: {fileID: 621934639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &118260619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2957837248884910040, guid: 5fd73c609ec49e34686a652d54bf9e71, type: 3}
@@ -1722,6 +1722,7 @@ GameObject:
   - component: {fileID: 209511461}
   - component: {fileID: 209511460}
   - component: {fileID: 209511459}
+  - component: {fileID: 209511464}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Enemy
@@ -1825,6 +1826,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &209511464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209511458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68763428329d6741ad108277f8bc105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  rotSpeed: 50
+  selector: {fileID: 0}
 --- !u!1001 &225863803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2251,8 +2267,6 @@ PrefabInstance:
     - target: {fileID: 2550374921334228665, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -3025,7 +3039,6 @@ PrefabInstance:
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.6974106
-      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3754,7 +3767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &451781724
 PrefabInstance:
@@ -3972,8 +3985,6 @@ PrefabInstance:
     - target: {fileID: 2550374921334228665, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -4460,16 +4471,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49ed8082fb9f1d4d8a9d82ac3c51ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationCollider: {fileID: 536703116}
   enemyList: []
   allyList: []
   timeRemaining: 0
-  position: {x: 0, y: 0, z: 0}
+  numberToWin: 0
   enemyMat: {fileID: 0}
   allyMat: {fileID: 0}
   soil: {fileID: 0}
   tower: {fileID: 0}
   flag: {fileID: 0}
+  allyZoneConquered: 0
 --- !u!65 &536703116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4695,7 +4706,7 @@ Transform:
   m_Children:
   - {fileID: 648886073}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &617077589 stripped
 GameObject:
@@ -4732,11 +4743,6 @@ PrefabInstance:
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.y
       value: -7.003891
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.3564911
-      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5363,8 +5369,6 @@ PrefabInstance:
     - target: {fileID: 2550374921334228665, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -5660,16 +5664,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0a3cc231b276054fb9bb012adbf7709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationCollider: {fileID: 676943468}
   enemyList: []
   allyList: []
   timeRemaining: 0
-  position: {x: 0, y: 0, z: 0}
+  numberToWin: 0
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
   soil: {fileID: 383476396}
   tower: {fileID: 49551011}
   flag: {fileID: 1728794235}
+  allyZoneConquered: 0
 --- !u!65 &676943468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6210,8 +6214,6 @@ PrefabInstance:
     - target: {fileID: 1945299970012720659, guid: 26e1f97bbaa964044a7db8e471fef912, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 26e1f97bbaa964044a7db8e471fef912, type: 3}
       propertyPath: m_RootOrder
@@ -7222,7 +7224,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &938573762
 PrefabInstance:
@@ -7607,11 +7609,6 @@ PrefabInstance:
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.y
       value: -7.3477783
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.243164
-      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8371,8 +8368,6 @@ PrefabInstance:
     - target: {fileID: 2550374921334228665, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -8577,8 +8572,6 @@ PrefabInstance:
     - target: {fileID: 2550374921334228665, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -8700,11 +8693,6 @@ PrefabInstance:
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.y
       value: -7.3477783
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.0881042
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8871,8 +8859,6 @@ PrefabInstance:
     - target: {fileID: 2550374921334228665, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -10012,7 +9998,7 @@ Transform:
   - {fileID: 536703114}
   - {fileID: 38469363}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1302895906
 PrefabInstance:
@@ -10292,16 +10278,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb367c79abb663a40ba934e2e83328d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationCollider: {fileID: 1344704700}
   enemyList: []
   allyList: []
   timeRemaining: 0
-  position: {x: 0, y: 0, z: 0}
+  numberToWin: 0
   enemyMat: {fileID: 0}
   allyMat: {fileID: 0}
   soil: {fileID: 0}
   tower: {fileID: 0}
   flag: {fileID: 0}
+  allyZoneConquered: 0
 --- !u!65 &1344704700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11644,8 +11630,6 @@ PrefabInstance:
     - target: {fileID: 2550374921334228665, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -12884,11 +12868,6 @@ PrefabInstance:
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.y
       value: -7.3477783
-      objectReference: {fileID: 0}
-    - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.6254578
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14190,7 +14169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907577645}
   - component: {fileID: 1907577644}
-  - component: {fileID: 1907577643}
+  - component: {fileID: 1907577646}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -14198,26 +14177,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1907577643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907577642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &1907577644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14246,8 +14205,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907577646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907577642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!4 &1916446369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4810897020050041922, guid: 7d1bba3af6a3a3e40b417d190f2007a0, type: 3}
@@ -14859,8 +14848,6 @@ PrefabInstance:
     - target: {fileID: 2550374921334228665, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_Layer
       value: 7
-      propertyPath: m_TagString
-      value: Obs
       objectReference: {fileID: 0}
     - target: {fileID: 5247616276716340675, guid: 81aaf903b8138eb4abca130da933a44c, type: 3}
       propertyPath: m_RootOrder
@@ -15566,16 +15553,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f657a433619d7f54e88a4b39f966f438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validationCollider: {fileID: 2100402774}
   enemyList: []
   allyList: []
   timeRemaining: 0
-  position: {x: 0, y: 0, z: 0}
+  numberToWin: 0
   enemyMat: {fileID: 0}
   allyMat: {fileID: 0}
   soil: {fileID: 0}
   tower: {fileID: 0}
   flag: {fileID: 0}
+  allyZoneConquered: 0
 --- !u!65 &2100402774
 BoxCollider:
   m_ObjectHideFlags: 0

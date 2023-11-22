@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4442890593961023212}
   - component: {fileID: 4442890593961023123}
   - component: {fileID: 4442890593961023208}
+  - component: {fileID: 1869138167989155882}
   m_Layer: 0
   m_Name: Ally
   m_TagString: Untagged
@@ -198,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  t_target: {fileID: 0}
+  t_target: {fileID: 4442890593961023121}
   distanceToPlayer: 0
   circleDistance: 0
   circleRadius: 0
@@ -248,3 +249,16 @@ MonoBehaviour:
   obstacleRadius: 5
   maxAvoidanceForce: 10
   showVectors: 1
+--- !u!114 &1869138167989155882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4442890593961023125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05c46034b6bbfb4cbbc2bf30f6ff308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canSend: 0
