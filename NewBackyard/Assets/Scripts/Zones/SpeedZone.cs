@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class SpeedZone : AbstracZone
 {
-    
+    public void Update()
+    {
+        if ((allyList.Count == 0)||(enemyList.Count == 0))
+        {
+            zoneEmpty = true;
+        }
+        if ((allyList.Count != 0)||(enemyList.Count != 0))
+        {
+            zoneEmpty = false;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
-            ChangeColor();
         {
-            AddEnemy( other.GetComponent<GameObject>());
+            AddEnemy(other.GetComponent<GameObject>());
+            ChangeColor();
         }
         if (other.gameObject.CompareTag("Ally"))
         {
@@ -23,12 +33,12 @@ public class SpeedZone : AbstracZone
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            DeleteEnemy( other.GetComponent<GameObject>());
+            DeleteEnemy(other.GetComponent<GameObject>());
             ChangeColor();
         }
         if (other.gameObject.CompareTag("Ally"))
         {
-            DeleteAlly( other.GetComponent<GameObject>());
+            DeleteAlly(other.GetComponent<GameObject>());
             ChangeColor();
         }
     }

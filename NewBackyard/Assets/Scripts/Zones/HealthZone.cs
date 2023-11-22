@@ -1,19 +1,34 @@
 
+using System;
 using UnityEngine;
 
 public class HealthZone : AbstracZone
 {
+    public void Update()
+    {
+        if ((allyList.Count == 0)||(enemyList.Count == 0))
+        {
+            zoneEmpty = true;
+        }
+        if ((allyList.Count != 0)||(enemyList.Count != 0))
+        {
+            zoneEmpty = false;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
-            ChangeColor();
         {
             AddEnemy( other.GetComponent<GameObject>());
+            ChangeColor();
+            Debug.Log("Enemy");
         }
         if (other.gameObject.CompareTag("Ally"))
         {
             AddAlly(other.GetComponent<GameObject>());
             ChangeColor();
+            Debug.Log("Ally");
         }
     }
     
