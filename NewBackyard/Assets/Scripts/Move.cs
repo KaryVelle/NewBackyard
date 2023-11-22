@@ -18,7 +18,7 @@ public class Move : MonoBehaviour
         
 
         rot = Input.GetAxis("See") * rotSpeed * Time.deltaTime;
-        Debug.Log(Input.GetAxis("Vertical"));
+        //Debug.Log(Input.GetAxis("Vertical"));
         
         transform.Translate(transalatex,0, transalatez);
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + rot, 0);
