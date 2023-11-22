@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Recolectable : MonoBehaviour
 {
-    public float rotationSpeed = 1.0f; 
+    public float rotationSpeed = 3; 
     public float floatSpeed = 1;   
     public float floatHeight =1;   
     private Vector3 _startPos;
