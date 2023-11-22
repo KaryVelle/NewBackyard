@@ -10,7 +10,8 @@ public class MoveInputs : MonoBehaviour
     void Update()
     {
         var gamepad = Gamepad.current;
-        Vector2 moveInput = gamepad.leftStick.ReadValue();
+        
+        Vector2 moveInput = gamepad.leftStick.ReadUnprocessedValue();
         Vector2 cameraRot = gamepad.rightStick.ReadValue();
 
         transform.Translate(new Vector3(moveInput.x, 0, moveInput.y) * speed * Time.deltaTime);

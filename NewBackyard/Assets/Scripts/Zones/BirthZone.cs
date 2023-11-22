@@ -7,12 +7,14 @@ public class BirthZone : AbstracZone
   private void OnTriggerEnter(Collider other)
   {
     if (other.gameObject.CompareTag("Enemy"))
+      ChangeColor();
     {
       AddEnemy( other.GetComponent<GameObject>());
     }
     if (other.gameObject.CompareTag("Ally"))
     {
       AddAlly(other.GetComponent<GameObject>());
+      ChangeColor();
     }
   }
     
@@ -21,10 +23,12 @@ public class BirthZone : AbstracZone
     if (other.gameObject.CompareTag("Enemy"))
     {
       DeleteEnemy( other.GetComponent<GameObject>());
+      ChangeColor();
     }
     if (other.gameObject.CompareTag("Ally"))
     {
       DeleteAlly( other.GetComponent<GameObject>());
+      ChangeColor();
     }
   }
   public void ActivateAbitity()
