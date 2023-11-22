@@ -161,7 +161,7 @@ MonoBehaviour:
   nodes3:
   - {x: 112, y: 0, z: 10}
   - {x: 126, y: 3, z: 11}
-  - {x: 126, y: 3, z: 48}
+  - {x: 125, y: 3, z: 48}
   - {x: 91, y: 3, z: 55}
   nodes4:
   - {x: -56, y: 0, z: 2}
@@ -170,7 +170,7 @@ MonoBehaviour:
   - {x: 6, y: 0, z: 13}
   - {x: 6, y: 3, z: -34}
   endList: []
-  pathRadius: 1
+  pathRadius: 2
   looping: 0
 --- !u!114 &4442890593961023213
 MonoBehaviour:
@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  canSend: 0
   enemyState: 0
 --- !u!114 &4442890593961023212
 MonoBehaviour:
