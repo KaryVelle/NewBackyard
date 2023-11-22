@@ -29,12 +29,14 @@ public class HealthZone : AbstracZone
             AddEnemy( other.GetComponent<GameObject>());
             ChangeColor();
             Debug.Log("Enemy");
+            ActivateAbitity();
         }
         if (other.gameObject.CompareTag("Ally"))
         {
             AddAlly(other.GetComponent<GameObject>());
             ChangeColor();
             Debug.Log("Ally");
+            ActivateAbitity();
         }
     }
     
@@ -49,16 +51,18 @@ public class HealthZone : AbstracZone
         {
             DeleteAlly( other.GetComponent<GameObject>());
             ChangeColor();
+
         }
     }
     public void ActivateAbitity()
     {
         if (allyZoneConquered)
         {
-            clone.lifetime = clone.lifetime * 2;
+            clone.lifetime = 120;
         }
         if (!allyZoneConquered)
         {
+            clone.lifetime = 60;
             // los enemigos ganaron, entonces su vida es x2
         }
     }

@@ -51,10 +51,11 @@ public class SpeedZone : AbstracZone
     {
         if (allyZoneConquered)
         {
-            clone.speed = clone.speed * 2;
+            clone.speed = 10;
         }
         if (!allyZoneConquered)
         {
+            clone.speed = 5;
             // los enemigos ganaron, entonces su velocidad es x2
         }
     }
