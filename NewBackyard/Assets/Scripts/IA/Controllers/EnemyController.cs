@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour
     private PathFollowing _pathFollowing;
     public GameObject target;
 
+    public bool canSend;
+
     public enum State
     {
         Idle,
@@ -32,7 +34,7 @@ public class EnemyController : MonoBehaviour
         _seek = GetComponent<Seek>();
         _avoidCollision = GetComponent<AvoidCollision>();
         _pathFollowing = GetComponent<PathFollowing>();
-
+        canSend = false;
     }
 
     private void Update()
@@ -49,6 +51,7 @@ public class EnemyController : MonoBehaviour
                 _pathFollowing.enabled = false;
                 _wander.enabled = false;
                 _seek.Target = target.transform.position;
+                canSend = true;
                 break;
             case State.Zone1:
                 _behaviourController.behaviours[0] = _pathFollowing;

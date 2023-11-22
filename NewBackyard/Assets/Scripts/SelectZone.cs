@@ -12,19 +12,39 @@ public class SelectZone : MonoBehaviour
     private void Start()
     {
         enemy = GetComponent<EnemyController>();
+        canSend = true;
     }
     // Update is called once per frame
     void Update()
     {
         var gamepad = Gamepad.current;
-        if (canSend)
+        if (canSend && enemy.canSend)
         {
             if(gamepad.rightShoulder.IsPressed())
             {
-                Debug.Log("center");
                 enemy.enemyState = EnemyController.State.ZoneCenter;
+                canSend = false;
             }
-            canSend = false;
+            if (gamepad.dpad.right.IsPressed())
+            {
+                enemy.enemyState = EnemyController.State.Zone1;
+                canSend = false;
+            }
+            if (gamepad.dpad.left.IsPressed())
+            {
+                enemy.enemyState = EnemyController.State.Zone2;
+                canSend = false;
+            }
+            if (gamepad.dpad.up.IsPressed())
+            {
+                enemy.enemyState = EnemyController.State.Zone3;
+                canSend = false;
+            }
+            if (gamepad.dpad.down.IsPressed())
+            {
+                enemy.enemyState = EnemyController.State.Zone4;
+                canSend = false;
+            }
         }
     }
 }
