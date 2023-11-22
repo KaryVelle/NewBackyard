@@ -61,6 +61,12 @@ public class EnemyController : MonoBehaviour
                 _pathFollowing.enabled = true;
                 _wander.enabled = false;
                 break;
+            case State.Zone3:
+                _behaviourController.behaviours[0] = _pathFollowing;
+                _pathFollowing.endList = _pathFollowing.nodes3;
+                _pathFollowing.enabled = true;
+                _wander.enabled = false;
+                break;
             case State.Zone4:
                 _behaviourController.behaviours[0] = _pathFollowing;
                 _pathFollowing.endList = _pathFollowing.nodes4;
