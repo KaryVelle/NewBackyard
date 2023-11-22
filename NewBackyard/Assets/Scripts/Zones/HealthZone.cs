@@ -63,7 +63,7 @@ public class HealthZone : AbstracZone
         if (!allyZoneConquered)
         {
             clone.lifetime = 60;
-            // los enemigos ganaron, entonces su vida es x2
+           
         }
     }
     
