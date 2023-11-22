@@ -489,13 +489,15 @@ MonoBehaviour:
   enemyList: []
   allyList: []
   timeRemaining: 0
-  numberToWin: 2
+  numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
   soil: {fileID: 625679192}
   tower: {fileID: 1382965626}
   flag: {fileID: 510663229}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &38469365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4557,10 +4559,12 @@ MonoBehaviour:
   numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
   soil: {fileID: 970575310}
   tower: {fileID: 827413600}
   flag: {fileID: 1776897476}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &536703116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4766,12 +4770,12 @@ GameObject:
   m_Component:
   - component: {fileID: 613248144}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: CanvasMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &613248144
 Transform:
   m_ObjectHideFlags: 0
@@ -5153,7 +5157,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -50, y: 50}
-  m_SizeDelta: {x: 350, y: 350}
+  m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &638703325
 MonoBehaviour:
@@ -5755,10 +5759,12 @@ MonoBehaviour:
   numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
   soil: {fileID: 383476396}
   tower: {fileID: 49551011}
   flag: {fileID: 1728794235}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &676943468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5770,8 +5776,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 47.642033, y: 9.068133, z: 46.450874}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 44.926453, y: 17.168262, z: 39.76739}
+  m_Center: {x: -4.129532, y: -4.050066, z: 3.3417416}
 --- !u!1001 &686867745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8694,8 +8700,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -25, y: 25}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: -15, y: 15}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1047810299
 MonoBehaviour:
@@ -10558,10 +10564,12 @@ MonoBehaviour:
   numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
   soil: {fileID: 713108566}
   tower: {fileID: 1931536294}
   flag: {fileID: 1315247919}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &1344704700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13654,7 +13662,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1762559112
 MonoBehaviour:
@@ -14091,7 +14099,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9bc89bdd32aee9b458eaba214cfe162f, type: 3}
 --- !u!1 &1829273428 stripped
@@ -14864,7 +14872,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9bc89bdd32aee9b458eaba214cfe162f, type: 3}
 --- !u!1001 &1972154464
@@ -15968,10 +15976,12 @@ MonoBehaviour:
   numberToWin: 1
   enemyMat: {fileID: 2100000, guid: 39d09e70dfef75e4993aaf6fe25ac477, type: 2}
   allyMat: {fileID: 2100000, guid: 2ac49fa9e3260404d98343e1f6bd01d8, type: 2}
+  normalMat: {fileID: 2100000, guid: 3327488551b1a38479df54c091492e38, type: 2}
   soil: {fileID: 455580135}
   tower: {fileID: 1363391011}
   flag: {fileID: 1032694031}
   allyZoneConquered: 0
+  zoneEmpty: 0
 --- !u!65 &2100402774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16161,7 +16171,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9bc89bdd32aee9b458eaba214cfe162f, type: 3}
 --- !u!1001 &4442890594289240236
