@@ -9,12 +9,12 @@ public class SelectZoneEnemy : MonoBehaviour
 {
     [SerializeField] bool canSend = true;
     private EnemyController enemy;
-    private Clone clone;
+    private CloneEnemy clone;
     private void Start()
     {
         enemy = GetComponent<EnemyController>();
         canSend = true;
-        clone = FindObjectOfType<Clone>();
+        clone = FindObjectOfType<CloneEnemy>();
         StartCoroutine(LifeTime(clone.lifetime));
     }
     // Update is called once per frame
