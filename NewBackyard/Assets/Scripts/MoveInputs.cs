@@ -11,6 +11,7 @@ public class MoveInputs : MonoBehaviour
     void Update()
     {
         var gamepad = Gamepad.current;
+        Debug.Log(gamepad.buttonSouth.IsPressed());
         Vector2 moveInput = gamepad.leftStick.ReadValue();
         Vector2 cameraRot = gamepad.rightStick.ReadValue();
         
