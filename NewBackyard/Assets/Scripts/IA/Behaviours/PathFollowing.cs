@@ -7,6 +7,9 @@ public class PathFollowing : Steering
     public EnemyController enemyController;
     public List<Vector3> nodes;
     public List<Vector3> nodes2;
+    public List<Vector3> nodes3;
+    public List<Vector3> nodes4;
+    public List<Vector3> nodescenter;
     public List<Vector3> endList;
     public float pathRadius;
     public bool looping;

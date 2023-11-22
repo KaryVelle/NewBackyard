@@ -18,6 +18,9 @@ public class EnemyController : MonoBehaviour
         Follow,
         Zone1,
         Zone2,
+        Zone3,
+        Zone4,
+        ZoneCenter,
     }
     public State enemyState;
 
@@ -42,7 +45,6 @@ public class EnemyController : MonoBehaviour
                 break;
             case State.Follow:
                 _behaviourController.behaviours[0] = _seek;
-                _avoidCollision.enabled = false;
                 _pathFollowing.enabled = false;
                 _wander.enabled = false;
                 _seek.Target = target.transform.position;
@@ -59,6 +61,13 @@ public class EnemyController : MonoBehaviour
                 _pathFollowing.enabled = true;
                 _wander.enabled = false;
                 break;
+            case State.Zone4:
+                _behaviourController.behaviours[0] = _pathFollowing;
+                _pathFollowing.endList = _pathFollowing.nodes4;
+                _pathFollowing.enabled = true;
+                _wander.enabled = false;
+                break;
+                
         }
 
     }
