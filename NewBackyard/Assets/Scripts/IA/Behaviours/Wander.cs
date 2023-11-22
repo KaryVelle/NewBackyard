@@ -20,6 +20,7 @@ public class Wander : Steering
 
     private void Start()
     {
+        t_target = GameObject.Find("Capsule").transform;
         EnemyController = GetComponent<EnemyController>();
         _seek = GetComponent<Seek>();
         StartCoroutine(RandomTarget());
