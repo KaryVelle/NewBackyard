@@ -15,13 +15,18 @@ public class PathFollowing : Steering
     public bool looping;
     private int _currentNode;
     private int _pathDirection = 1;
+    public Clone clone;
+
 
     public void Start()
     {
         enemyController = GetComponent<EnemyController>();
+        clone = FindObjectOfType<Clone>();
+
     }
     public override Vector3 GetForce()
     {
+        speed = clone.speed;
         Follow(endList);
         return Seek(endList);
     }
