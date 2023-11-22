@@ -8,7 +8,7 @@ public class AvoidCollision : Steering
     public float obstacleRadius;
     public float maxAvoidanceForce;
     public bool showVectors;
-    public GameObject[] positionList;
+    private GameObject[] positionList;
     private List<Vector3> _obstacleList = new List<Vector3>();
     private Vector3 _ahead, _ahead2;
     

@@ -3342,6 +3342,10 @@ PrefabInstance:
       value: Stone Corner 01
       objectReference: {fileID: 0}
     - target: {fileID: 5935514896897500345, guid: 3455833eec4b82945b32eb9bc930accd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5935514896897500345, guid: 3455833eec4b82945b32eb9bc930accd, type: 3}
       propertyPath: m_TagString
       value: Obs
       objectReference: {fileID: 0}
@@ -11639,7 +11643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5afb2e83fd59e5c4ea9e6edbe46eb341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   arrival: 1
   slowingRadius: 3
 --- !u!114 &1819303488
@@ -11750,12 +11754,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd502addf2f762b4f85f99e954e5a2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  maxSeeAhead: 2
-  obstacleRadius: 2
-  maxAvoidanceForce: 2
-  showVectors: 0
-  positionList: []
+  speed: 5
+  maxSeeAhead: 5
+  obstacleRadius: 5
+  maxAvoidanceForce: 10
+  showVectors: 1
 --- !u!1 &1827977590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4437621008515719116, guid: c238da638407d5045bfb87588abc1b12, type: 3}
