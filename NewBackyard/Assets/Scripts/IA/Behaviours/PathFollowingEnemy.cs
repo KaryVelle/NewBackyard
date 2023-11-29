@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PathFollowingEnemy : Steering
 {
-    public EnemyController enemyController;
+    public EnemyController2 enemyController2;
     public List<Vector3> nodes;
     public List<Vector3> nodes2;
     public List<Vector3> nodes3;
@@ -20,7 +20,7 @@ public class PathFollowingEnemy : Steering
 
     public void Start()
     {
-        enemyController = GetComponent<EnemyController>();
+        enemyController2 = GetComponent<EnemyController2>();
         clone = FindObjectOfType<Clone>();
 
     }

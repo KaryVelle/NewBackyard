@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1689038316846656966}
   - component: {fileID: 1689038316846656969}
   - component: {fileID: 1689038316846656968}
+  - component: {fileID: 204757250291607441}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -212,3 +213,40 @@ MonoBehaviour:
   - -180
   - 180
   rotSpeed: 2
+--- !u!114 &204757250291607441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689038316846656974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62bb2e4395f99444eacd3463814e398d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  enemyController2: {fileID: 0}
+  nodes:
+  - {x: 45, y: 0, z: -101}
+  - {x: 55, y: 2, z: -106}
+  - {x: 79, y: 2, z: -106}
+  nodes2:
+  - {x: -36, y: 0, z: -94}
+  - {x: -36, y: 3, z: -115}
+  - {x: -70, y: 3, z: -115}
+  nodes3:
+  - {x: 112, y: 0, z: 10}
+  - {x: 127, y: 3, z: 11}
+  - {x: 125, y: 3, z: 48}
+  - {x: 91, y: 3, z: 55}
+  nodes4:
+  - {x: -56, y: 0, z: 2}
+  - {x: -56, y: 0, z: 55}
+  nodescenter:
+  - {x: 6, y: 0, z: 13}
+  - {x: 6, y: 3, z: -34}
+  endList: []
+  pathRadius: 3
+  looping: 0
+  clone: {fileID: 0}

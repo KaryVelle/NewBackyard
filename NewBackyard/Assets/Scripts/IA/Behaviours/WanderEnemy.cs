@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WanderEnemy : Steering
 {
-    private EnemyController EnemyController;
+    private EnemyController2 EnemyController2;
     public Transform t_target;
     public float distanceToPlayer;
     public float circleDistance;
@@ -21,10 +21,11 @@ public class WanderEnemy : Steering
     private void Start()
     {
         t_target = GameObject.Find("Capsule").transform;
-        EnemyController = GetComponent<EnemyController>();
+        EnemyController2 = GetComponent<EnemyController2>();
         _seek = GetComponent<Seek>();
         StartCoroutine(RandomTarget());
         StartCoroutine(RandomAngle());
+        StartCoroutine(ChooseZone());
     }
 
     public override Vector3 GetForce()
@@ -61,6 +62,34 @@ public class WanderEnemy : Steering
         {
             _rotationAngle = Random.Range(angleRange[0], angleRange[1]);
             yield return new WaitForSecondsRealtime(Random.Range(angleChange[0], angleChange[1]));
+        }
+    }
+
+    IEnumerator ChooseZone()
+    {
+        yield return new WaitForSeconds(10f);
+        int index = Random.Range(1, 5);
+        switch (index)
+        {
+            case 1:
+                EnemyController2.enemyState = EnemyController2.State.Zone1;
+                break;
+            
+            case 2:
+                EnemyController2.enemyState = EnemyController2.State.Zone2;
+                break;
+            
+            case 3:
+                EnemyController2.enemyState = EnemyController2.State.Zone3;
+                break;
+            
+            case 4:
+                EnemyController2.enemyState = EnemyController2.State.Zone4;
+                break;
+            
+            case 5:
+                EnemyController2.enemyState = EnemyController2.State.ZoneCenter;
+                break;
         }
     }
 }
