@@ -34,8 +34,8 @@ public class FactoryZone : AbstracZone
         {
             DeleteAlly( other.GetComponent<GameObject>());
             ChangeColor();
-           
         }
+        ActivateAbitity();
     }
     public void ActivateAbitity()
     {

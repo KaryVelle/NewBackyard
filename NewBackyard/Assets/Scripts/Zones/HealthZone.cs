@@ -21,6 +21,7 @@ public class HealthZone : AbstracZone
         {
             zoneEmpty = false;
         }
+        ActivateAbitity();
     }
 
     private void OnTriggerEnter(Collider other)

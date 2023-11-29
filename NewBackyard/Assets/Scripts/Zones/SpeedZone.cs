@@ -33,8 +33,8 @@ public class SpeedZone : AbstracZone
         {
             AddAlly(other.GetComponent<GameObject>());
             ChangeColor();
-            
         }
+        ActivateAbitity();
     }
     
     private void OnTriggerExit(Collider other)
@@ -61,7 +61,6 @@ public class SpeedZone : AbstracZone
         if (!allyZoneConquered)
         {
             cloneEnemy.speed = 10;
-
         }
     }
 }
