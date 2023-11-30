@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour
     {
         for (int i = 0; i <= maxSpawn; i++)
         {
-            Vector3 randomPos = new Vector3(Random.Range(-77f, 125f), 5f, Random.Range(-118f, 64f));
+            Vector3 randomPos = new Vector3(Random.Range(-84f, 120f), 5f, Random.Range(-6f, -60f));
             GameObject NewInst = Instantiate(enemy, randomPos, Quaternion.identity);
             enemyList.Add(NewInst);
         }
@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour
     private void Spawn()
     {
         spawnTime = clone.spawnTime;
-        Vector3 randomPos = new Vector3(Random.Range(-77f, 125f), 5f, Random.Range(-118f, 64f));
+        Vector3 randomPos = new Vector3(Random.Range(-84f, 120f), 5f, Random.Range(-6f, -60f));
         GameObject newEnemy = Instantiate(enemy, randomPos, Quaternion.identity);
     }
 }
