@@ -15,13 +15,13 @@ public class PathFollowingEnemy : Steering
     public bool looping;
     private int _currentNode;
     private int _pathDirection = 1;
-    public Clone clone;
+    public CloneEnemy clone;
 
 
     public void Start()
     {
         enemyController2 = GetComponent<EnemyController2>();
-        clone = FindObjectOfType<Clone>();
+        clone = FindObjectOfType<CloneEnemy>();
 
     }
     public override Vector3 GetForce()

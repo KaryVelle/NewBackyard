@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 
 public class SelectZone : MonoBehaviour
 {
+    [SerializeField] SpriteRenderer imageToModifi;
+    [SerializeField] Sprite[] images;
     [SerializeField] bool canSend = true;
     private EnemyController enemy;
     private Clone clone;
@@ -27,26 +29,31 @@ public class SelectZone : MonoBehaviour
             {
                 enemy.enemyState = EnemyController.State.ZoneCenter;
                 canSend = false;
+                imageToModifi.sprite = images[4];
             }
             if (gamepad.dpad.right.IsPressed())
             {
                 enemy.enemyState = EnemyController.State.Zone1;
                 canSend = false;
+                imageToModifi.sprite = images[0];
             }
             if (gamepad.dpad.left.IsPressed())
             {
                 enemy.enemyState = EnemyController.State.Zone2;
                 canSend = false;
+                imageToModifi.sprite = images[2];
             }
             if (gamepad.dpad.up.IsPressed())
             {
                 enemy.enemyState = EnemyController.State.Zone3;
                 canSend = false;
+                imageToModifi.sprite = images[3];
             }
             if (gamepad.dpad.down.IsPressed())
             {
                 enemy.enemyState = EnemyController.State.Zone4;
                 canSend = false;
+                imageToModifi.sprite = images[1];
             }
         }
     }

@@ -42642,6 +42642,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 204757250291607441, guid: aad598cc7229c9d4fad280044a742271, type: 3}
+      propertyPath: clone
+      value: 
+      objectReference: {fileID: 1570565013}
     - target: {fileID: 1689038316846656968, guid: aad598cc7229c9d4fad280044a742271, type: 3}
       propertyPath: t_target
       value: 
