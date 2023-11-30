@@ -9,7 +9,7 @@ public class EnemyController2 : MonoBehaviour
     private WanderEnemy _wanderEnemy;
     private Seek _seek;
     private AvoidCollision _avoidCollision;
-    private PathFollowing _pathFollowing;
+    private PathFollowingEnemy _pathFollowing;
     public GameObject target;
 
     public bool canSend;
@@ -33,7 +33,7 @@ public class EnemyController2 : MonoBehaviour
         _wanderEnemy = GetComponent<WanderEnemy>();
         _seek = GetComponent<Seek>();
         _avoidCollision = GetComponent<AvoidCollision>();
-        _pathFollowing = GetComponent<PathFollowing>();
+        _pathFollowing = GetComponent<PathFollowingEnemy>();
         canSend = false;
     }
 
