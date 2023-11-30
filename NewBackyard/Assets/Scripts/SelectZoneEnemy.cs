@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 public class SelectZoneEnemy : MonoBehaviour
 {
-    [SerializeField] bool canSend = true;
+    [SerializeField] bool canSend = false;
     private EnemyController enemy;
     private CloneEnemy clone;
     private void Start()
@@ -20,7 +20,7 @@ public class SelectZoneEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var gamepad = Gamepad.current;
+       /* var gamepad = Gamepad.current;
         if (canSend && enemy.canSend)
         {
             if(gamepad.rightShoulder.IsPressed())
@@ -48,7 +48,7 @@ public class SelectZoneEnemy : MonoBehaviour
                 enemy.enemyState = EnemyController.State.Zone4;
                 canSend = false;
             }
-        }
+        }*/
     }
 
     IEnumerator LifeTime(float time)
