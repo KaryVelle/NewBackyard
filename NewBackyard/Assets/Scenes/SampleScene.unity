@@ -5315,7 +5315,7 @@ MonoBehaviour:
   time1: 3
   time2: 5
   winPlatform: {fileID: 1277195358}
-  zoneController: {fileID: 0}
+  zoneController: {fileID: 842433288}
   CanvaWin: {fileID: 697265686}
 --- !u!65 &38469365
 BoxCollider:
@@ -10020,8 +10020,8 @@ MonoBehaviour:
   flag: {fileID: 1776897476}
   allyZoneConquered: 0
   zoneEmpty: 0
-  clone: {fileID: 0}
-  cloneEnemy: {fileID: 0}
+  clone: {fileID: 1570565013}
+  cloneEnemy: {fileID: 721221551}
 --- !u!65 &536703116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11460,8 +11460,8 @@ MonoBehaviour:
   flag: {fileID: 1728794235}
   allyZoneConquered: 0
   zoneEmpty: 0
-  clone: {fileID: 0}
-  cloneEnemy: {fileID: 0}
+  clone: {fileID: 1570565013}
+  cloneEnemy: {fileID: 721221551}
 --- !u!65 &676943468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12639,10 +12639,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 706d632383d7e7a4da633792f56660cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedZone: {fileID: 0}
-  birthZone: {fileID: 0}
-  healthZone: {fileID: 0}
-  factoryZone: {fileID: 0}
+  speedZone: {fileID: 536703115}
+  birthZone: {fileID: 2100402773}
+  healthZone: {fileID: 676943467}
+  factoryZone: {fileID: 1344704699}
   zoneList: 
   zoneListEnem: 
 --- !u!4 &842433289
@@ -22042,8 +22042,8 @@ MonoBehaviour:
   flag: {fileID: 1315247919}
   allyZoneConquered: 0
   zoneEmpty: 0
-  clone: {fileID: 0}
-  cloneEnemy: {fileID: 0}
+  clone: {fileID: 1570565013}
+  cloneEnemy: {fileID: 721221551}
 --- !u!65 &1344704700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42313,8 +42313,8 @@ MonoBehaviour:
   flag: {fileID: 1032694031}
   allyZoneConquered: 0
   zoneEmpty: 0
-  clone: {fileID: 0}
-  cloneEnemy: {fileID: 0}
+  clone: {fileID: 1570565013}
+  cloneEnemy: {fileID: 721221551}
 --- !u!65 &2100402774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42645,7 +42645,7 @@ PrefabInstance:
     - target: {fileID: 204757250291607441, guid: aad598cc7229c9d4fad280044a742271, type: 3}
       propertyPath: clone
       value: 
-      objectReference: {fileID: 1570565013}
+      objectReference: {fileID: 721221551}
     - target: {fileID: 1689038316846656968, guid: aad598cc7229c9d4fad280044a742271, type: 3}
       propertyPath: t_target
       value: 
@@ -42711,6 +42711,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2315859913255575775, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4442890593961023121, guid: fd83960d8dc0b724dbb5666915d7591a, type: 3}
       propertyPath: m_RootOrder
       value: 7
