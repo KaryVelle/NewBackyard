@@ -67,7 +67,7 @@ public class WanderEnemy : Steering
 
     IEnumerator ChooseZone()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(30f);
         int index = Random.Range(1, 5);
         switch (index)
         {

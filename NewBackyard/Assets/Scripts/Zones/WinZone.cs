@@ -47,14 +47,15 @@ public class WinZone : AbstracZone
    }
    public void ActivateAbitity()
    {
-      if ((zoneController.zoneList.Count > 2) && (allyZoneConquered))
+      if ((zoneController.zoneList.Count > 3) && (allyZoneConquered))
       {
          CanvaWin.SetActive(true);
+         Time.timeScale = 0;
       }
-      if ((zoneController.zoneListEnem.Count > 2) && (!allyZoneConquered))
+      if ((zoneController.zoneListEnem.Count > 3) && (!allyZoneConquered))
       {
-         //WIN
-         Debug.Log("loose");
+
+         Debug.Log("lose");
       }
      
    }
