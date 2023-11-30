@@ -16,6 +16,7 @@ public abstract class AbstracZone : MonoBehaviour
   public GameObject flag;
   public bool allyZoneConquered;
   public bool zoneEmpty;
+    public bool canConquerd = true;
 
   private void GetMajorPopulation()
   {

@@ -20,58 +20,71 @@ public class ZoneController : MonoBehaviour
     public bool pHealthZone = true;
     public bool eHealthZone = true;
 
+    private void Start()
+    {
+        StartCoroutine(DelayToconquer());
+    }
     private void Update()
     {
-        if (speedZone.allyZoneConquered && pSpeedZone)
+        if (speedZone.allyZoneConquered && pSpeedZone && speedZone.canConquerd)
         {
             zoneList.Add(speedZone);
             pSpeedZone = false;
             eSpeedZone = true;
         }
-        if (!speedZone.allyZoneConquered && eSpeedZone)
+        if (!speedZone.allyZoneConquered && eSpeedZone && speedZone.canConquerd)
         {
             zoneListEnem.Add(speedZone);
             eSpeedZone = false;
             pSpeedZone = true;
         }
         
-        if (birthZone.allyZoneConquered && pBirthZone)
+        if (birthZone.allyZoneConquered && pBirthZone && birthZone.canConquerd)
         {
             zoneList.Add(birthZone);
             pBirthZone = false;
             eBirthZone = true;
         }
-        if (!birthZone.allyZoneConquered && eBirthZone)
+        if (!birthZone.allyZoneConquered && eBirthZone && birthZone.canConquerd)
         {
             zoneListEnem.Add(birthZone);
             eBirthZone = false;
             pBirthZone = true;
         }
        
-        if (factoryZone.allyZoneConquered && pFactoryZone)
+        if (factoryZone.allyZoneConquered && pFactoryZone && factoryZone.canConquerd)
         {
             zoneList.Add(factoryZone);
             pFactoryZone = false;
             eFactoryZone = true;
         }
-        if (!factoryZone.allyZoneConquered && eFactoryZone)
+        if (!factoryZone.allyZoneConquered && eFactoryZone && factoryZone.canConquerd)
         {
             zoneListEnem.Add(factoryZone);
             eFactoryZone = false;
             pFactoryZone = true;
         }
         
-        if (healthZone.allyZoneConquered && pHealthZone)
+        if (healthZone.allyZoneConquered && pHealthZone && healthZone.canConquerd)
         {
             zoneList.Add(healthZone);
             pHealthZone = false;
             eHealthZone = true;
         }
-        if (!healthZone.allyZoneConquered && eHealthZone)
+        if (!healthZone.allyZoneConquered && eHealthZone && healthZone.canConquerd)
         {
             zoneListEnem.Add(healthZone);
             eHealthZone = false;
             pHealthZone = true;
         }
+    }
+
+    IEnumerator DelayToconquer()
+    {
+        yield return new WaitForSeconds(30f);
+        speedZone.canConquerd = true;
+        healthZone.canConquerd = true;
+        factoryZone.canConquerd = true;
+        birthZone.canConquerd = true;
     }
 }
